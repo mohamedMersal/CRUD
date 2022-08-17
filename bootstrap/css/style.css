@@ -1,0 +1,52 @@
+:root{
+    --maincolor: #F25454;
+}
+.later{
+    color: var(--maincolor);
+}
+
+/* START-TITLE */
+.title .title-h{
+    margin-top: 10.25px;
+    bottom: 9px;
+}
+.title .title-h h2{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.title h2::after{
+    content: "";
+    width: 34px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+.title:hover h2::after{
+    width: 60px;
+}
+.title h3{
+    color: rgb(165 163 163 / 28%);
+    font-size: 5rem;
+    font-weight: 750;
+    letter-spacing: 5px;
+}
+/* END-TITLE */
+
+/* START-CLIENT */
+#client .carousel-indicators [data-bs-target]{
+    width: 13%;
+    height: 13%;
+    
+    border-radius: 50%;
+    background-color: var(--maincolor);
+}
+/* START- CONTACT */
+
